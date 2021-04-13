@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{eed92ae7-effe-4fac-91a5-278c06e3e321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{230eb62f-2eb1-4e47-ad18-d6c4bcef73f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\App">
+      <UniqueIdentifier>{e9ce0718-1713-4543-8cdd-6fbdcdcd77b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Terrain">
+      <UniqueIdentifier>{6e851077-ce00-43a5-b767-0fb54f9c21a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\App">
+      <UniqueIdentifier>{ac95f8c5-6e27-4c99-bf27-ffbe54ded84e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Terrain">
+      <UniqueIdentifier>{2ba8762f-5f83-4fb1-a112-fb0ea7aa4d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Pch">
+      <UniqueIdentifier>{ca678006-4819-4e3d-9034-97e84fb8a617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\World">
+      <UniqueIdentifier>{1c90e4b0-0ba6-4ee3-bac8-82ad703a4b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\World">
+      <UniqueIdentifier>{97931798-77f0-4711-a5f9-c622a6556913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Component">
+      <UniqueIdentifier>{e4c4a420-c52b-4b13-8277-e2cdbbe967a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Component">
+      <UniqueIdentifier>{a0911d07-162b-41ce-933e-4f497f7013e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Meta">
+      <UniqueIdentifier>{9887e4ff-9515-40b9-947c-be8f3ff36e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Services">
+      <UniqueIdentifier>{84a814a4-aa73-4224-b262-b438ec1b0a4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Services">
+      <UniqueIdentifier>{e0f94671-b664-4098-bed5-2a0a56bbc2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Cloth">
+      <UniqueIdentifier>{910185ce-d341-4939-90d2-c926e1f82cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Cloth">
+      <UniqueIdentifier>{db9fb139-6fcc-4330-883e-242ee6b0b18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\SkyDome">
+      <UniqueIdentifier>{0e16cf00-07de-4960-a8c8-2db91abfc082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\SkyDome">
+      <UniqueIdentifier>{dc74ce40-6ae9-4112-aada-6bcf522123d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Planet">
+      <UniqueIdentifier>{150c83ef-b72b-4882-803a-80a0b3dc1229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Planet">
+      <UniqueIdentifier>{47c4ae24-78d2-4bf2-88e3-4ca30efa5161}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Common.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\JimmyGodEngine.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\App.h">
+      <Filter>Inc\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\AppState.h">
+      <Filter>Inc\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Terrain.h">
+      <Filter>Inc\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Precompiled.h">
+      <Filter>Src\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameObject.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Component.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameWorld.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\GameObjectFactory.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TransformComponent.h">
+      <Filter>Inc\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\ColliderComponent.h">
+      <Filter>Inc\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Service.h">
+      <Filter>Inc\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MetaRegistration.h">
+      <Filter>Src\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\CameraService.h">
+      <Filter>Inc\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Cloth.h">
+      <Filter>Inc\Cloth</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SkyDome.h">
+      <Filter>Inc\SkyDome</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Planet.h">
+      <Filter>Inc\Planet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\JimmyGodEngine.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\App.cpp">
+      <Filter>Src\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Terrain.cpp">
+      <Filter>Src\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Precompiled.cpp">
+      <Filter>Src\Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameObject.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Component.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameWorld.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameObjectFactory.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TransformComponent.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ColliderComponent.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Service.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaRegistration.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CameraService.cpp">
+      <Filter>Src\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Cloth.cpp">
+      <Filter>Src\Cloth</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SkyDome.cpp">
+      <Filter>Src\SkyDome</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Planet.cpp">
+      <Filter>Src\Planet</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
