@@ -124,7 +124,7 @@ float4 PSEarth(VSOutput input) : SV_TARGET
 	//textureColor = lerp(textureColor, nightColor, dot(LightDirection, worldNormal));
 	float nightIntensity = saturate(-diffuseRaw);
 
-	float nightBlend = (diffuseRaw + 1.0f)*0.5f;
+	float nightBlend = (diffuseRaw + 1.0f)/** 0.5f*/;
 
     float4 color = nightBlend * (ambient + diffuse) * textureColor + (nightIntensity * nightColor) + specular * (specularMapWeight != 0.0f ? specularFactor : 1.0f);
     return color;

@@ -6,10 +6,15 @@ using namespace JimmyGod::Graphics;
 
 void TileMap::Load()
 {
-	mTextureIds[0] = TextureManager::Get()->Load("grass.png");
+	mTextureIds[0] = TextureManager::Get()->Load("tile2.png");
 	mColumns = 50;
 	mRows = 40;
 	mTiles.resize(static_cast<size_t>(mColumns * mRows), 0);
+	for (size_t i = 0; i < mTiles.size(); ++i)
+	{
+		mTiles[i] = 0;
+	}
+
 }
 
 void TileMap::UnLoad()

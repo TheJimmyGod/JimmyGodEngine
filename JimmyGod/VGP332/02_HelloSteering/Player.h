@@ -27,6 +27,9 @@ namespace Steering
 		JimmyGod::Graphics::TextureId mPlayerSprite;
 		JimmyGod::Math::Circle mCirclePos;
 		float mTimer;
+
+		SpriteAnimation mSmoke;
+		bool isStarted = false;
 	};
 }
 

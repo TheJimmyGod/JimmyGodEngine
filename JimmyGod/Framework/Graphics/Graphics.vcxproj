@@ -23,7 +23,7 @@
     <ProjectGuid>{06E6ABDE-CF57-4616-A611-454834E8C04A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Graphics</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -169,11 +169,14 @@
     <ClInclude Include="Inc\Model.h" />
     <ClInclude Include="Inc\OBJLoader.h" />
     <ClInclude Include="Inc\PixelShader.h" />
+    <ClInclude Include="Inc\RasterizerState.h" />
     <ClInclude Include="Inc\RenderTarget.h" />
     <ClInclude Include="Inc\Sampler.h" />
     <ClInclude Include="Inc\SimpleDraw.h" />
     <ClInclude Include="Inc\Skeleton.h" />
     <ClInclude Include="Inc\SkeletonIO.h" />
+    <ClInclude Include="Inc\SpriteAnimation.h" />
+    <ClInclude Include="Inc\SpriteAnimationInfo.h" />
     <ClInclude Include="Inc\SpriteRenderer.h" />
     <ClInclude Include="Inc\SpriteRenderManager.h" />
     <ClInclude Include="Inc\Texture.h" />
@@ -209,11 +212,13 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Src\RasterizerState.cpp" />
     <ClCompile Include="Src\RenderTarget.cpp" />
     <ClCompile Include="Src\Sampler.cpp" />
     <ClCompile Include="Src\SimpleDraw.cpp" />
     <ClCompile Include="Src\Skeleton.cpp" />
     <ClCompile Include="Src\SkeletonIO.cpp" />
+    <ClCompile Include="Src\SpriteAnimation.cpp" />
     <ClCompile Include="Src\SpriteRenderer.cpp" />
     <ClCompile Include="Src\SpriteRenderManager.cpp" />
     <ClCompile Include="Src\Texture.cpp" />

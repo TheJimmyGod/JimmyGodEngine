@@ -31,6 +31,9 @@ namespace Steering
 		JimmyGod::Math::Circle mCirclePos;
 		float mTimer = 0.0f;
 		bool isOrdered = false;
+		bool isStarted = false;
+
+		SpriteAnimation mSmoke;
 	};
 }
 

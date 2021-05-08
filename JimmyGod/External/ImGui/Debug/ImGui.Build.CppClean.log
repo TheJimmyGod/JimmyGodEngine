@@ -7,8 +7,9 @@ c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui_impl_dx11.obj
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui_draw.obj
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui_demo.obj
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui.obj
-c:\users\jimmy\desktop\da\jimmygod\debug\imgui.lib
 c:\users\jimmy\desktop\da\jimmygod\debug\imgui.pdb
+c:\users\jimmy\desktop\da\jimmygod\debug\imgui.idb
+c:\users\jimmy\desktop\da\jimmygod\debug\imgui.lib
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui.tlog\cl.command.1.tlog
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui.tlog\cl.read.1.tlog
 c:\users\jimmy\desktop\da\jimmygod\external\imgui\debug\imgui.tlog\cl.write.1.tlog

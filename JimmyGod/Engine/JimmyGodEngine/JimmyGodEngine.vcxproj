@@ -23,13 +23,13 @@
     <ProjectGuid>{B716E344-9A3B-468E-801F-639410D47B30}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>JimmyGodEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -60,18 +60,22 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\VSProps\Engine.props" />
+    <Import Project="..\..\External\FW1FontWrapper_1_1\VSProps\FW1FontWrapper_1_1_Link.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\VSProps\Engine.props" />
+    <Import Project="..\..\External\FW1FontWrapper_1_1\VSProps\FW1FontWrapper_1_1_Link.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\VSProps\Engine.props" />
+    <Import Project="..\..\External\FW1FontWrapper_1_1\VSProps\FW1FontWrapper_1_1_Link.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\VSProps\Engine.props" />
+    <Import Project="..\..\External\FW1FontWrapper_1_1\VSProps\FW1FontWrapper_1_1_Link.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -153,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Inc\App.h" />
     <ClInclude Include="Inc\AppState.h" />
+    <ClInclude Include="Inc\Bomb.h" />
     <ClInclude Include="Inc\CameraService.h" />
     <ClInclude Include="Inc\Cloth.h" />
     <ClInclude Include="Inc\ColliderComponent.h" />
@@ -163,8 +168,10 @@
     <ClInclude Include="Inc\GameWorld.h" />
     <ClInclude Include="Inc\JimmyGodEngine.h" />
     <ClInclude Include="Inc\Planet.h" />
+    <ClInclude Include="Inc\Rope.h" />
     <ClInclude Include="Inc\Service.h" />
     <ClInclude Include="Inc\SkyDome.h" />
+    <ClInclude Include="Inc\Spark.h" />
     <ClInclude Include="Inc\Terrain.h" />
     <ClInclude Include="Inc\TransformComponent.h" />
     <ClInclude Include="Src\MetaRegistration.h" />
@@ -172,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\App.cpp" />
+    <ClCompile Include="Src\Bomb.cpp" />
     <ClCompile Include="Src\CameraService.cpp" />
     <ClCompile Include="Src\Cloth.cpp" />
     <ClCompile Include="Src\ColliderComponent.cpp" />
@@ -183,8 +191,10 @@
     <ClCompile Include="Src\MetaRegistration.cpp" />
     <ClCompile Include="Src\Planet.cpp" />
     <ClCompile Include="Src\Precompiled.cpp" />
+    <ClCompile Include="Src\Rope.cpp" />
     <ClCompile Include="Src\Service.cpp" />
     <ClCompile Include="Src\SkyDome.cpp" />
+    <ClCompile Include="Src\Spark.cpp" />
     <ClCompile Include="Src\Terrain.cpp" />
     <ClCompile Include="Src\TransformComponent.cpp" />
   </ItemGroup>

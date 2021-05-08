@@ -15,6 +15,7 @@
 #include "Mesh.h"
 #include "MeshBuffer.h"
 #include "MeshBuilder.h"
+#include "RasterizerState.h"
 #include "RenderTarget.h"
 #include "Sampler.h"
 #include "SimpleDraw.h"
@@ -30,6 +31,8 @@
 #include "AnimationClip.h"
 #include "AnimationIO.h"
 #include "KeyFrame.h"
+#include "SpriteAnimation.h"
+#include "SpriteAnimationInfo.h"
 
 #include "Model.h"
 #include "MeshIO.h"

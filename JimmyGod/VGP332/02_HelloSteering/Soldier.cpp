@@ -24,17 +24,29 @@ void Soldier::Load()
 	mSteeringModule->AddBehavior<PursuitBehavior>("Pursuit")->SetActive(false);
 	mSteeringModule->AddBehavior<EvadeBehavior>("Evade")->SetActive(false);
 	mSteeringModule->AddBehavior<WanderBehavior>("Wander")->SetActive(false);
-	mSteeringModule->AddBehavior<AviodObsBehavior>("Avoid")->SetActive(false);
+	mSteeringModule->AddBehavior<AvoidObsBehavior>("Avoid")->SetActive(false);
 	mSteeringModule->AddBehavior<HideBehavior>("Hide")->SetActive(false);
+	mSteeringModule->AddBehavior<WallAvoidBehvior>("Wall")->SetActive(false);
 
 	mSteeringModule->AddBehavior<SeparationBehavior>("Separation")->SetActive(false);
 	mSteeringModule->AddBehavior<AlignmentBehavior>("Alignment")->SetActive(false);
 	mSteeringModule->AddBehavior<CohesionBehavior>("Cohesion")->SetActive(false);
+	mSteeringModule->AddBehavior<EnforceNonPenetrationConstraint>("Enforce")->SetActive(false);
+
+	SpriteAnimationInfo spriteInfo;
+	spriteInfo.fileName = "SmokeSprite.png";
+	spriteInfo.columns = 8;
+	spriteInfo.rows = 8;
+	spriteInfo.frameCount = 64;
+	spriteInfo.framePerSecond = 64.0f;
+	spriteInfo.looping = true;
+
+	mSmoke.Load(spriteInfo);
 
 	mSoldierSprite = TextureManager::Get()->Load("zombie_idle.png");
 	MaxSpeed = 200.0f;
 	Mass = 1.0f;
-	Radius = 10.0f;
+	Radius = 32.0f;
 }
 
 void Soldier::Unload()
@@ -74,6 +86,22 @@ void Soldier::Update(float deltaTime)
 		Velocity = Velocity / speed * MaxSpeed;
 
 
+	mSmoke.Update(deltaTime);
+	mSmoke.SetPosition(Position);
+	if (speed > 100.0f)
+	{
+		if (isStarted == false)
+		{
+			isStarted = true;
+			mSmoke.Play();
+		}
+	}
+	else
+	{
+		isStarted = false;
+		mSmoke.Stop();
+	}
+
 	Position += Velocity * deltaTime;
 
 
@@ -89,11 +117,13 @@ void Soldier::Update(float deltaTime)
 	else if (Position.y > (static_cast<float>(GS->GetBackBufferHeight())))
 		Position.y = 0.0f;
 	mTimer += deltaTime;
+
 }
 
 void Soldier::Render()
 {
-	const float angle = atan2(Heading.y, Heading.x) * Math::Constants::RadToDeg / 50.0f; // Texture frames
+	mSmoke.Render();
+	const float angle = atan2(Heading.y, Heading.x) * Math::Constants::RadToDeg / 60.0f; // Texture frames
 
 	SpriteRenderManager::Get()->DrawSprite(mSoldierSprite, Position,angle);
 }
